@@ -1,0 +1,134 @@
+
+.contact{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+   margin-top: 20px;
+}
+
+#contact{
+    width:70%;
+    box-shadow:0 0 10px #0097e6;
+    padding:20px;
+    max-width:400px;
+    border-radius: 5px;
+}
+input{
+    width:90%;
+    height:20px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+input::placeholder{
+    color: skyblue;
+    font-size: 15px;
+    font-family: arial;
+}
+input:focus{
+outline: ;
+border: 1px solid green;
+}
+
+textarea::placeholder{
+    color: skyblue;
+    font-size:15px;
+    font-family: arial;}
+textarea{
+    width:90%;
+    height:40px;
+    resize: none;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+form .btn{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+}
+ form .btn button{
+    color:blue;
+    width:100px;
+    padding:5px;
+    text-decoration:bold;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+form .btn button:hover{
+background: orange;
+box-shadow: 0 0 15px orange;
+color: white;
+}
+.contacts{
+    text-align:center;
+}
+section{text-align:center;
+width:90%;
+max-width:500px;
+border:1px solid #ddd;
+border-radius:5px;
+background: white;
+padding:10px;
+
+}
+section h2{
+    color:blue;
+}
+section p{
+    font-weight:600;
+    
+}
+section button{
+    width:70px;
+    height:30px;
+}
+#admin{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.contacts #admin button{
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+.contacts #admin button:hover{
+    background: #2caf50;
+    color: white;
+}
+
+    
+.contacts{
+
+}
+.tel{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .separate{
+        margin-bottom: 50px;
+    }
+
+
+@media(max-width:768px){
+    #admin{
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .tel{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #admin section:hover{
+        width: 100%;
+
+    }
+}

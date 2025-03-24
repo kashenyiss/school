@@ -1,0 +1,26 @@
+.container{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+text-align: center;
+}
+.img-container{
+width: 400px;
+height: 400px;
+padding: 20px;
+border-radius: 4px;
+border: 1px solid white;
+margin: 5px;
+background: white;
+}
+.img-container img{
+width: 100%;
+max-height: 350px;
+}
+.img-container .detail{
+text-transform: capitalize;
+color: blue;
+}
+.separate{
+    margin-bottom: 100px;
+}

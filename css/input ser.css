@@ -1,0 +1,62 @@
+h2{
+	text-transform: capitalize;
+	color: #000000;
+}
+body{
+background:#eeffff;
+justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+   }
+
+form{
+justify-content: center;
+    align-items: center;
+    
+}
+
+
+.form{
+	text-align:center;
+width:500px;
+max-width:500px;
+border:1px solid #00ffff;
+border-radius:5px;
+background: white;
+padding:10px;
+background:#eeffff;
+box-shadow: 0 0 10px #000000;
+   margin-top: 70px;
+
+}
+button{
+	 color:blue;
+    width:100px;
+    padding:5px;
+    text-decoration:bold;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+button:hover{
+	background: orange;
+    color: white;
+}
+	input::placeholder{
+    color: red;
+    font-size: 15px;
+    font-family: falling sky;
+}
+
+
+input{
+    width:70%;
+    height:30px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    align-items: center;
+    text-transform: capitalize;
+}
