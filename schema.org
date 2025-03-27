@@ -1,0 +1,18 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "School Gallery",
+  "image": "http://kashenyiss.github.io/school/images/school/aerial view.jpg",
+  "url": "http://kashenyiss.github.io/school/home.html",
+  "description": "An image for School aerial view.",
+  "author": {
+    "@type": "Person",
+    "name": "Davis Nagaba"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kashenyi Secondary School"
+  }
+}
+</script>
