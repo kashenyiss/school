@@ -20,7 +20,7 @@ msg.addEventListener("input",function(){
 })
 
 email.addEventListener("input",function(){
-    if(email.value.length<2){
+    if(email.value.length<2){ 
         email.style.border="1px solid red";
     }
     else if(email.value.length>=10){

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
     <meta charset="utf-8">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
     <meta name="viewport"content="width=device-width"initial-scale="1.0">
 <meta name ="description"content ="Kashenyi secondary school is an educational institution located in Rukungiri district">
 
@@ -51,73 +57,203 @@
       </span>
          </h1>         
       </div>
-    
-      <!--<form class="profile">
+    <!--Profile update form-->
+     <form class="profile">
         <h2>Update your profile</h2>
-        <div class="input">
+
+    <div class="input">
         <label>Username</label>
         <input type="text" id="username">
-    </div><div class="input">
+    </div>
+
+
+    <div class="input">
         <label>Email</label>
         <input type="email" id="email">
-        </div>
-        <button id="save">Save</button>
-      </form>-->
+    </div>
+    <div class="input">
+        <label>Category</label>
+        <select id="category">
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Administrator</option>
+        </select>
+    </div>
+        <button onclick="save()">Save</button>
+      </form>
+<div class="ribbon">
+<div id="profile"></div>  
 <div id="quotes"></div>
+</div>
 <div class="container">
  <div class="intro"> 
-  <img src="../images/school/aerial view.jpg"loading="lazy"></div>
-  <div class="msg">
+  <img  data-aos="zoom-in" src="../images/school/aerial view.jpg"loading="lazy"alt=""title=""></div>
+
+  <div class="msg" data-aos="fade-in">
     <h2>Welcome to Kashenyi Secondary School - Pioneering Excellence in Education in Rukungiri District"</h2>
     <p>
 Welcome to Kashenyi Secondary School, a leading secondary school in Rukungiri District and Uganda at large, dedicated to empowering students through quality and holistic education. Our school offers a comprehensive curriculum that nurtures academic excellence, personal growth, and community engagement. With a strong focus on innovation and critical thinking, we prepare students for success both in and out of the classroom. At Kashenyi, every student is valued, and our passionate educators work tirelessly to ensure each learner reaches their full potential. Discover more about our diverse programs, experienced staff, and vibrant school culture.
           </p>
 
-</div></div> 
+</div>
+<div class="intro-img">
+<img src="../images/school/back.jpg"data-aos="slide-left">
+<h2>School Aerial View</h2>
+</div>
+</div> 
+
+
 
 <div class="box">
     <div class="img">
     <h2> Kashenyi SS Now online!</h2>
     
-    <img src="../images/assets/user.jpg">
-    <img src="../images/assets/user1.jpg">
+    <img src="../images/assets/user.jpg"alt=""title=""data-aos="zoom-out">
+    <img src="../images/assets/user1.jpg"alt=""title=""data-aos="zoom-out">
     </div>
 </div>
+<!--slider-->
+<div id="slide">
+    <h2>SCHOOL CLUBS & COMMUNITIES</h2>
+    <figure data-aos="flip-up">
+        <div class="slide-img">
+            <img src="../images/club-logos/debate.jpeg">
+            <h3>Debating club</h3></div>
+        <div class="slide-img">
+            <img src="../images/club-logos/interact.png">
+            <h3>Interact Club</h3></div>
+        <div class="slide-img">
+            <img src="../images/club-logos/scouting.png">
+            <h3>Scouting Club</h3></div>
+        <div class="slide-img">
+            <img src="../images/club-logos/SU.jpeg">
+            <h3>Scripture Union</h3></div>
+        <div class="slide-img">
+            <img src="../images/club-logos/science-club.png">
+            <h3>Science Club</h3> </div>
+            <div class="slide-img">
+           
+    </figure>
+</div>
+<div class="events">
+<h2>Upcoming Events</h2>
+<div class="page" data-aos="zoom-in">
+<div id="calendar">
+    <div id="header">
+        <div id="prev"><i class="fa-solid fa-arrow-left"></i></div>
+        <div id="current"></div>
+        <div id="next"><i class="fa-solid fa-arrow-right"></i></div>
+    </div>
+    <div id="week">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thur</div>
+        <div>Fri</div>
+        <div>Sat</div>
+    </div>
+    <div id="days"></div>
+</div>
+</div>
+<div id="events">
+   <p> No upcoming events this month, check again next month</p>
+</div>
+</div>
+<div class="bx">
+    
+    <h2>Articles from Students</h2>
+    <p>Dear reader,we are here to make you enjoy scrolling and we are introducing to you the articles composed by the active minds of Kashenyi SS</p>
+    
+    <div class="articles" data-aos="fade-in">
+    <div class="article">
+        <h2>Mother 1</h2>
+        <p>
+            A lady among ladies<br>
+A mother to the nation   <br>                                                                        
+A mother or 1000000 children<br>
+She is tough,strong to carry a burden ...
+        </p>
+        <h3>By: Ahabwe Prossy</h3>
+        <button>Read more</button>
+    </div>
+<!-- second article -->
+<div class="article">
+        <h2>Mother 2</h2>
+        <p>
+            A lady among ladies<br>
+A mother to the nation   <br>                                                                        
+A mother or 1000000 children<br>
+She is tough,strong to carry a burden ...
+        </p>
+        <h3>By: Ahabwe Prossy</h3>
+        <button>Read more</button>
+    </div>
+<!--third article-->
+<div class="article">
+        <h2>Mother 3</h2>
+        <p>
+            A lady among ladies<br>
+A mother to the nation   <br>                                                                        
+A mother or 1000000 children<br>
+She is tough,strong to carry a burden ...
+        </p>
+        <h3>By: Ahabwe Prossy</h3>
+        <button>Read more</button>
+  
+    
+   </div>
+    
+   <button class="viewMore">view more <i class="fas fa-caret-right"></i></button>
+    </div> </div>
 <div class="box">
-    <div class="img">
+    <div class="img" data-aos="zoom-in">
     <h2>Why Kashenyi SS</h2>
     
-    <img src="../images/school/computer lab.jpg">
-    <img src="../images/school/library.jpg">
+    <img src="../images/school/computer lab.jpg"alt=""title="">
+    <img src="../images/school/library.jpg"alt=""title="">
     </div>
 </div>
 <div class="box">
 <div class="photo"> 
     <h2>Discover the way to success</h2>
-  <img src="../images/assets/stairsup.jpg">
+  <img src="../images/assets/stairsup.jpg"alt=""title="">
     </div> 
 </div>
- <div class="contact-info">
+ <div class="contact-info" onmouseover="showLogo()" onmouseleave="hideLogo()">
     <span class="close-btn" onclick="this.parentElement.style.display='none';">×</span>
+    <img src="../images/developer/developer.png"id="developer" data-aos="slide-right">
     <h2><a href="../portfolio/index.html">About the Developers</a></h2>
-    <p>of this website</p>
 </div>
 <div class="box">
     <div class="img">
     <h2>Sports @ Kashenyi SS 
        </h2>
-    <img src="../images/sports/handball.jpeg">
-    <img src="../images/sports/race.jpeg">
-    <img src="../images/sports/volleyball.jpeg">
+    <img src="../images/sports/handball.jpeg"alt=""title=""data-aos="slide-right">
+    <img src="../images/sports/race.jpeg"alt=""title=""data-aos="slide-right">
+    <img src="../images/sports/volleyball.jpeg"alt=""title=""data-aos="slide-right">
     </div>
 </div>
 
 </main>
+<div class="jass"></div>
 <div class="separate"></div>
  <footer>
       <p>The Ark website &copy;copyright 2024|All rights reserved.</p>
     </footer>
 <script src="../script/script.js"></script>
+<script src="../script/jquery.js"></script>
 <script src="../script/quotes.js"></script>
+<script src="../script/profile.js"></script>
+<script src="../script/events.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:300,
+        duration:1450,
+    });
+  </script>
 </body>
 </html>

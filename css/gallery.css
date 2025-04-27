@@ -3,6 +3,7 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 text-align: center;
+justify-content: center;
 }
 .img-container{
 width: 400px;
@@ -24,3 +25,49 @@ color: blue;
 .separate{
     margin-bottom: 100px;
 }
+
+
+.gallery-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .gallery-container img {
+      width: 300px;
+      height: auto;
+      margin-right: 10px;
+      border-radius: 10px;
+      display: inline-block;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Fullscreen overlay */
+    .fullscreen-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .fullscreen-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    .fullscreen-overlay:active {
+      display: none;
+    }
