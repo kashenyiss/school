@@ -1,0 +1,96 @@
+/* Bright and modern styling for admissions page */
+
+body {
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #222;
+}
+
+.admissions-container {
+    max-width: 900px;
+    margin: 40px auto 30px auto;
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(67, 198, 172, 0.18);
+    padding: 40px 32px 32px 32px;
+}
+
+.admissions-intro h1 {
+    color: #43c6ac;
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #f8ffae80;
+}
+
+.admissions-intro p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 28px;
+}
+
+.admissions-requirements, .admissions-process, .admissions-contact {
+    margin-bottom: 32px;
+    background: #f8ffae33;
+    border-radius: 12px;
+    padding: 24px 20px 18px 28px;
+    box-shadow: 0 2px 12px #43c6ac22;
+}
+
+.admissions-requirements h2, .admissions-process h2, .admissions-contact h2 {
+    color: #43c6ac;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.admissions-requirements ul, .admissions-contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.admissions-requirements ul li::before {
+    content: '✔';
+    color: #43c6ac;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.admissions-process ol {
+    padding-left: 22px;
+}
+
+.admissions-process ol li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.admissions-contact ul li {
+    margin-bottom: 7px;
+}
+
+footer {
+    text-align: center;
+    padding: 18px 0 10px 0;
+    color: #43c6ac;
+    font-weight: 500;
+    background: #fffbe7;
+    border-top: 2px solid #43c6ac22;
+}
+
+/* Add a little animation for sections */
+section[data-aos] {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+section[data-aos]:hover {
+    box-shadow: 0 8px 32px #43c6ac33;
+    transform: translateY(-4px) scale(1.01);
+}
+
+@media (max-width: 700px) {
+    .admissions-container {
+        padding: 18px 6px 18px 6px;
+    }
+    .admissions-intro h1 {
+        font-size: 2rem;
+    }
+}

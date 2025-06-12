@@ -1,0 +1,303 @@
+/* Highlight Styles */
+.highlight {
+    background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
+    color: #2c3e50;
+    padding: 0.3em 0.7em;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(255, 174, 51, 0.15);
+    transition: background 0.3s, color 0.3s;
+}
+
+.highlight:hover {
+    background: linear-gradient(90deg, #ffa751 0%, #ffe259 100%);
+    color: #fff;
+}
+
+/* For inline highlights */
+.highlight-inline {
+    background: #fffbe6;
+    color: #b26a00;
+    padding: 0.1em 0.4em;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* For highlighted cards or sections */
+.highlight-card {
+    background: #fff3cd;
+    border-left: 6px solid #ffa751;
+    padding: 1.2em 1.5em;
+    border-radius: 12px;
+    margin: 1.5em 0;
+    box-shadow: 0 4px 16px rgba(255, 174, 51, 0.08);
+}
+
+/* School Highlights Section (moved from style.css) */
+.school-highlights {
+    background: linear-gradient(120deg, #fffbe6 0%, #ffe0c3 100%);
+    padding: 50px 0 40px 0;
+    border-radius: 18px;
+    margin: 40px auto 0 auto;
+    box-shadow: 0 4px 24px rgba(255, 174, 51, 0.08);
+    max-width: 1200px;
+}
+
+.highlights-title {
+    color: #b26a00;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.highlight-item {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(255, 174, 51, 0.10);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 18px;
+    min-height: 120px;
+    gap: 18px;
+}
+
+.highlight-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(255, 174, 51, 0.18);
+}
+
+.highlight-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.highlight-item blockquote {
+    font-size: 1.1rem;
+    color: #b26a00;
+    font-style: italic;
+    margin: 0 0 0 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Location Section Styles */
+.location-section {
+    background: #f5f7fa;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(46,125,50,0.08);
+    padding: 40px 20px 32px 20px;
+    margin: 40px auto 0 auto;
+    max-width: 1100px;
+    text-align: center;
+}
+.location-title {
+    color: #2e7d32;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.location-desc {
+    color: #555;
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(46,125,50,0.10);
+}
+
+/* News & Events Styles */
+.more {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+}
+.news, .events {
+    background: #f5f7fa;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(46,125,50,0.08);
+    padding: 28px 18px 22px 18px;
+    margin-bottom: 24px;
+    width: 100%;
+    max-width: 540px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.news {
+    background: linear-gradient(120deg, #e3f2fd 0%, #fffde7 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(33, 150, 243, 0.10);
+    padding: 40px 32px 36px 32px;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex: 2 1 340px;
+    border-right: 2px solid #e0e0e0;
+}
+.news h3 {
+    color: #1976d2;
+    font-size: 1.6em;
+    font-weight: 800;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+}
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.news-list li {
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1.5px solid #b3e5fc;
+    background: #ffffffcc;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(33, 150, 243, 0.06);
+    padding-left: 18px;
+    padding-right: 18px;
+    transition: box-shadow 0.2s;
+}
+.news-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.news-list li:hover {
+    box-shadow: 0 4px 16px rgba(33, 150, 243, 0.13);
+}
+.news-date {
+    color: #1976d2;
+    font-size: 1em;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.news-title {
+    color: #ff9800;
+    font-size: 1.15em;
+    font-weight: 800;
+    margin-left: 4px;
+    letter-spacing: 0.5px;
+}
+.news-desc {
+    color: #039be5;
+    font-size: 1.08em;
+    margin-top: 8px;
+    margin-left: 0;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.events {
+    flex: 1 1 260px;
+    background: #fffde7;
+    box-shadow: 0 2px 12px rgba(255, 193, 7, 0.08);
+    min-width: 260px;
+}
+.events h3 {
+    color: #ff9800;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.events-div {
+    margin-top: 10px;
+    color: #333;
+    font-size: 1.05em;
+}
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.event-item {
+    background: #fff8e1;
+    border-radius: 8px;
+    padding: 12px 10px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(255, 193, 7, 0.07);
+    overflow: hidden;
+}
+.event-date {
+    color: #ff9800;
+    font-weight: 600;
+    margin-right: 6px;
+}
+.event-title {
+    color: #1976d2;
+    font-weight: 700;
+}
+.event-desc {
+    color: #555;
+    font-size: 0.98em;
+    margin-top: 4px;
+}
+
+@media (max-width: 700px) {
+    .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .highlight-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 10px 8px;
+    }
+    .highlight-item img {
+        width: 70px;
+        height: 70px;
+    }
+    .location-section {
+        padding: 18px 4px 12px 4px;
+    }
+    .map-container iframe {
+        height: 220px !important;
+    }
+    .news, .events {
+        padding: 12px 4px 10px 4px;
+    }
+}
+@media (max-width: 900px) {
+    .more {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .news, .events {
+        max-width: 100%;
+        border-right: none;
+        padding: 24px 8px 18px 8px;
+    }
+    .news-list li {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

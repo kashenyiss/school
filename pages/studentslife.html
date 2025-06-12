@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kashenyi Secondary School</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/student.css">
+    <!-- <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">The
+            <span>Ark</span>
+        </div>
+        <nav>
+            <ul>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <div class="list">
+                        <li>
+                            <i class="fas fa-home"></i>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-user"></i>
+                            <a href="../pages/about.html">About</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-image"></i>
+                            <a href="../pages/gallery.html">Gallery</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-user-graduate"></i>
+                            <a href="../pages/studentslife.html">Student life</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-newspaper"></i>
+                            <a href="../pages/updates.html">News & Updates</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-book-open"></i>
+                            <a href="../pages/academics.html">Academics</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-door-open"></i>
+                            <a href="../pages/admissions.html">Admissions</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <a href="../pages/contact.html">Contact</a>
+                        </li>
+
+                    </div>
+
+                    <label for="check" class="close"><i class="fa fa-times"></i></label>
+                </span>
+                <label for="check" class="open">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </ul>
+        </nav>
+    </header>
+    <div class="separate"></div>
+
+    <main class="student-life-container">
+        <section class="student-life-intro" data-aos="fade-up">
+            <h1>Student Life at Kashenyi Secondary School</h1>
+            <p>At Kashenyi SS, student life is vibrant, diverse, and full of opportunities for personal growth. Our students
+                participate in a wide range of activities that foster leadership, creativity, teamwork, and lifelong
+                friendships.</p>
+        </section>
+        <section class="student-life-highlights">
+            <div class="highlight" data-aos="fade-right">
+                <img src="../images/football.jpeg" alt="Sports" />
+                <h2>Sports & Athletics</h2>
+                <p>From football to athletics, our students excel in various sports, promoting health, discipline, and
+                    teamwork.</p>
+            </div>
+            <div class="highlight" data-aos="fade-up">
+                <img src="../images/talentshow.jpeg" alt="Talent Shows" />
+                <h2>Talent Shows & Events</h2>
+                <p>Annual talent shows, debates, and cultural events allow students to showcase their unique abilities and
+                    creativity.</p>
+            </div>
+            <div class="highlight" data-aos="fade-left">
+                <img src="../images/clubs/science-club.png" alt="Clubs" />
+                <h2>Clubs & Societies</h2>
+                <p>Join clubs like Science, Debate, Interact, and more to develop skills, make friends, and serve the
+                    community.</p>
+            </div>
+        </section>
+        <section class="student-life-gallery" data-aos="zoom-in">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="../images/debate.jpeg" alt="Debate Club" />
+                <img src="../images/patriotism.jpeg" alt="Patriotism" />
+                <img src="../images/scripture.jpeg" alt="Scripture Union" />
+                <img src="../images/bus.jpg" alt="School Bus" />
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright Kashenyi SS 2024. Developed & Designed by AWB</p>
+    </footer>
+    <!--scripts -->
+    <script src="../script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1450,
+        });
+    </script>
+
+</body>
+
+</html>

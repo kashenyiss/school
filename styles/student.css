@@ -1,0 +1,95 @@
+/* Student Life Page Styles */
+.student-life-container {
+    max-width: 1100px;
+    margin: 40px auto 60px auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.student-life-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.student-life-intro h1 {
+    font-size: 2.5rem;
+    color: #2a4d69;
+    margin-bottom: 12px;
+}
+.student-life-intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+.student-life-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+.highlight {
+    flex: 1 1 280px;
+    background: #f7fafc;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(42,77,105,0.06);
+    padding: 24px 18px 18px 18px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.highlight:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(42,77,105,0.13);
+}
+.highlight img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    border: 3px solid #2a4d69;
+    background: #fff;
+}
+.highlight h2 {
+    color: #2a4d69;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+.highlight p {
+    color: #444;
+    font-size: 1rem;
+}
+.student-life-gallery {
+    margin-top: 32px;
+}
+.student-life-gallery h2 {
+    text-align: center;
+    color: #2a4d69;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+    padding: 0 12px;
+}
+.gallery-grid img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(42,77,105,0.08);
+    transition: transform 0.2s;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 800px) {
+    .student-life-highlights {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .student-life-container {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kashenyi Secondary School</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/updates.css">
+    <!-- <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="logo">The
+            <span>Ark</span>
+        </div>
+        <nav>
+            <ul>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <div class="list">
+                        <li>
+                            <i class="fas fa-home"></i>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-user"></i>
+                            <a href="../pages/about.html">About</a>
+                        </li>
+
+                        <li>
+                            <i class="fas fa-image"></i>
+                            <a href="../pages/gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-user-graduate"></i>
+                            <a href="../pages/studentslife.html">Student life</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-newspaper"></i>
+                            <a href="../pages/updates.html">News & Updates</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-book-open"></i>
+                            <a href="../pages/academics.html">Academics</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-door-open"></i>
+                            <a href="../pages/admissions.html">Admissions</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <a href="../pages/contact.html">Contact</a>
+                        </li>
+
+                    </div>
+
+                    <label for="check" class="close"><i class="fa fa-times"></i></label>
+                </span>
+                <label for="check" class="open">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </ul>
+        </nav>
+    </header>
+    <div class="separate"></div>
+    <div class="filters">
+        <label for="event-category">Filter by category: </label>
+        <select id="event-category">
+            <option value="all">All Events</option>
+            <option value="academic">Academic</option>
+            <option value="sports">Sports</option>
+            <option value="fundraiser">Fundraiser</option>
+            <option value="holiday">Holiday</option>
+        </select>
+    </div>
+    
+    <div class="updates-section">
+        <h2>Latest News & Announcements</h2>
+        <ul class="news-list">
+            <li>
+                <span class="news-date">June 5, 2025</span>
+                <span class="news-title">Kashenyi SS Wins District Football Championship!</span>
+                <p class="news-desc">Our school team emerged victorious in the district finals, bringing home the trophy. Congratulations to all players and coaches!</p>
+            </li>
+            <li>
+                <span class="news-date">May 28, 2025</span>
+                <span class="news-title">New Science Lab Inaugurated</span>
+                <p class="news-desc">The new state-of-the-art science laboratory was officially opened, providing students with modern facilities for practical learning.</p>
+            </li>
+            <li>
+                <span class="news-date">May 15, 2025</span>
+                <span class="news-title">Upcoming Mid-Term Exams</span>
+                <p class="news-desc">Mid-term exams will commence on June 17th. Students are encouraged to prepare thoroughly and consult teachers for guidance.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="calendar">
+        <h2>Upcoming Events</h2>
+        <div id="event-calendar"></div>
+    </div>
+    
+    <div class="events-list">
+        <h2>Event Details</h2>
+        <ul id="events"></ul>
+    </div>
+    <footer>
+        <p>&copy; Copyright Kashenyi SS 2024. Developed & Designed by AWB</p>
+    </footer>
+    <!--scripts -->
+    <script src="../script/script.js"></script>
+    <script src="../script/updates.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1450,
+        });
+    </script>
+
+</body>
+
+</html>
