@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/weather.css">
+        <link rel="icon" type="image/jpeg" href="images/badge.jpg">
     </head>
     <body>
        
@@ -104,9 +105,9 @@
     <section class="principal-welcome">
         <h2>Welcome from the Headteacher</h2>
         <div class="welcome-message">
-            <img src="images/bus.jpg" alt="Headteacher" class="principal-photo" style="max-width:150px;float:left;margin-right:20px;">
+            <img src="images/badge.jpg" alt="Headteacher" class="principal-photo" style="max-width:150px;float:left;margin-right:20px;">
             <p>Welcome to Kashenyi Secondary School! We are dedicated to nurturing academic excellence, character, and innovation. Our staff and I are committed to providing a safe, inclusive, and inspiring environment for every student. We invite you to explore our vibrant community and discover the opportunities that await you here.</p>
-            <p><strong>- Rev. Ivan Mwogera, Headteacher</strong></p>
+            <p><strong>- Rev. Ivan Mwogyera, Headteacher</strong></p>
         </div>
     </section>
 
@@ -197,7 +198,7 @@
             <img src="images/football.jpeg" alt="Football" />
             <img src="images/talentshow.jpeg" alt="Talent Show" />
             <img src="images/bus.jpg" alt="School Bus" />
-            <img src="images/back.jpg" alt="Campus" />
+            <img src="images/aerial.jpg" alt="Campus" />
         </div>
         <a href="pages/gallery.html" class="view-more">View More Photos</a>
     </section>
@@ -232,8 +233,8 @@
     <section class="partners">
         <h2>Our Partners & Accreditations</h2>
         <div class="partners-logos">
-            <img src="images/clubs/science-club.png" alt="Science Club" style="max-width:80px;">
-            <img src="images/clubs/interact.png" alt="Interact Club" style="max-width:80px;">
+            <img src="images/uneb.jpg" alt="UNEB" style="max-width:80px;">
+            <img src="images/MoES.jpg" alt="MoES" style="max-width:80px;">
             <!-- Add more partner logos as needed -->
         </div>
     </section>
@@ -316,10 +317,10 @@
             <h3>Kashenyi secondary School</h3>
             <h4>P.O.Box 294, Rukungiri.</h4>
             <div class="btns">
-                <button><i class="fab fa-facebook"></i></button>
-                <button><i class="fab fa-tiktok"></i></button>
-                <button><i class="fab fa-whatsapp"></i></button>
-                <button><i class="fa fa-envelope"></i></button>
+                <a href="https://www.tiktok.com/@kashenyi1981"><button><i class="fab fa-facebook"></i></button></a>
+                <a href="https://www.tiktok.com/@kashenyi1981"><button><i class="fab fa-tiktok"></i></button></a>
+                <a href="https://www.tiktok.com/@kashenyi1981"><button><i class="fab fa-whatsapp"></i></button></a>
+                <a href="https://www.tiktok.com/@kashenyi1981"><button><i class="fa fa-envelope"></i></button></a>
             </div>
         </div>
 
@@ -338,12 +339,7 @@
          <footer> 
             <p>&copy; Copyright Kashenyi SS 2024. Developed & Designed by AWB</p> 
         </footer>
-        <!-- Weather Widget Section -->
-    <section class="weather-widget" id="weather-widget">
-        <h2>Weather Updates</h2>
-        <div id="weather-current" class="weather-current">Loading current weather...</div>
-        <div id="weather-forecast" class="weather-forecast"></div>
-    </section>
+
         <!--scripts -->
         <script src="script/script.js"></script>
         <script src=""></script>
@@ -357,52 +353,10 @@
         <script src="script/updates.js"></script>
         <script src="script/newletter.js"></script>
         <script src="script/weather.js"></script>
+        <script src="script/home-events.js"></script>
 
         <!-- Weather Widget Script -->
-        <script>
-            // Sample weather data
-            const weatherData = {
-                location: "Rwamugoma Ruhinda Rukungiri, UG",
-                current: {
-                    temperature: 24,
-                    description: "Sunny",
-                    icon: "https://openweathermap.org/img/wn/02d.png"
-                },
-                forecast: [
-                    { day: "Mon", temperature: 22, icon: "https://openweathermap.org/img/wn/03d.png" },
-                    { day: "Tue", temperature: 23, icon: "https://openweathermap.org/img/wn/01d.png" },
-                    { day: "Wed", temperature: 24, icon: "https://openweathermap.org/img/wn/02d.png" },
-                    { day: "Thu", temperature: 21, icon: "https://openweathermap.org/img/wn/04d.png" },
-                    { day: "Fri", temperature: 20, icon: "https://openweathermap.org/img/wn/09d.png" }
-                ]
-            };
-
-            // Function to load weather data
-            function loadWeather() {
-                document.getElementById('weather-current').innerHTML = `
-                    <strong>Current Weather in ${weatherData.location}</strong><br>
-                    <img src="${weatherData.current.icon}" alt="${weatherData.current.description}">
-                    ${weatherData.current.temperature}°C - ${weatherData.current.description}
-                `;
-
-                let forecastHtml = '<strong>5-Day Forecast:</strong><br>';
-                weatherData.forecast.forEach(day => {
-                    forecastHtml += `
-                        <div class="forecast-day">
-                            <span class="forecast-date">${day.day}</span>
-                            <img src="${day.icon}" alt="Weather icon">
-                            <span class="forecast-temp">${day.temperature}°C</span>
-                        </div>
-                    `;
-                });
-                document.getElementById('weather-forecast').innerHTML = forecastHtml;
-            }
-
-            // Load weather data on page load
-            window.onload = function() {
-                loadWeather();
-            };
-        </script>
+        <!-- JavaScript for the weather widget has been moved to script/weather.js -->
         
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6S0DS6Q50"></script>

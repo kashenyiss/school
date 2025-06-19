@@ -1,16 +1,9 @@
 h2{
-    color:#0097e6;
-    padding: 20px;
-    width: 80%;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    position: relative;
-    left: 5%;
+    color:#0097e6;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
 }
 .contacts {
         
@@ -22,29 +15,47 @@ h2{
         flex-wrap: wrap;
         margin-bottom: 50px;
         gap:10px;
+        padding: 20px 0;
+        background: #f7fbff;
+}
+.contacts h2{
+     color:#0097e6;
 }
 
-section {
-    width: 250px;
-    max-width: 500px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background:linear-gradient(20deg, rgba(0,0,0,0.5) 50%, transparent 50%);
-    padding: 10px;
-    height: 130px;
-    position: relative;
-    border: 1px solid #fff;
 
-
+#admin section {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 1.5px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: rgba(0, 151, 230, 0.12);
+    border: 1.5px solid #0097e6;
+    margin: 10px 0;
+    height:150px;
+    text-align: center;
+    width: 400px;;
+}
+#admin section:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,151,230,0.18);
+    background: #fff;
+}
+#admin section button{
+    width:80px;
+    height:30px;
+    border-radius:8px;
+    background:#0097e6;
+    margin: 5px;;
 }
 
 section h2 {
-    color: blue;
+    color: #0097e6;
     background: transparent;
     padding: 5px;
     border-left: none;
     width:100%;
-    font-size: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
     border: none;
     border-radius: 0;
 }
@@ -52,17 +63,15 @@ section h2 {
 section p {
     font-weight: 600;
     text-align: center;
-    color: white;
-
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
-section button {
-    width: 70px;
-    height: 30px;
-    left:30%;
-    position: absolute;
-    bottom: 10px;
- 
+
+section button:hover {
+    background: linear-gradient(90deg, #2caf50 60%, #0097e6 100%);
+    transform: scale(1.07);
 }
 
 #admin {
@@ -99,17 +108,127 @@ section button {
 }
 
 
-@media(max-width:900px) {
-    #admin {
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+/* Contact Intro Section */
+.contact-intro {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,151,230,0.07);
+    padding: 32px 24px 18px 24px;
+    margin: 30px auto 30px auto;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-intro h1 {
+    color: #0097e6;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.contact-intro p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+.school-contact-details {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+}
+.school-contact-details li {
+    margin: 10px 0;
+    color: #222;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.school-contact-details i {
+    color: #0097e6;
+    font-size: 1.2em;
+}
 
-    .tel {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+/* Contact Form Section */
+.contact-form-section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,151,230,0.07);
+    padding: 32px 24px 24px 24px;
+    margin: 30px auto 40px auto;
+    max-width: 600px;
+    text-align: center;
+    height: 500px;
+    margin-bottom: 100px;
+}
+.contact-form-section h2 {
+    color: #0097e6;
+    margin-bottom: 18px;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+    position:relative;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+.form-group label {
+    font-weight: 600;
+    color: #0097e6;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1.5px solid #0097e6;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f7fbff;
+    color: #222;
+    transition: border 0.2s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 2px solid #2caf50;
+    outline: none;
+}
+#contactForm button[type="submit"] {
+    width: 160px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #0097e6 60%, #2caf50 100%);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    position: absolute;
+    top:-60px;
+}
+#contactForm button[type="submit"]:hover {
+    background: linear-gradient(90deg, #2caf50 60%, #0097e6 100%);
+    transform: scale(1.05);
+}
+#form-status {
+    margin-top: 50px;
+    font-size: 1rem;
+    min-height: 24px;
 
- 
+}
+.form-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom:20px;
+    text-align: center;;
+   
 }

@@ -340,7 +340,7 @@
     align-items: center;
     width: 100%;
     flex-direction: row;
-    height: 200px;
+    height: 600px;
     margin-bottom: 30px;
  }
  .more section{
@@ -372,7 +372,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         width: 100%;
-        height: auto;
+        height:1250px;
     }
     .more section{
         width:80%;

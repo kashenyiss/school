@@ -1,25 +1,29 @@
+// Add null check for darkToggle
 const toggle = document.getElementById("darkToggle");
-
-toggle.addEventListener("change", () => {
-  document.body.classList.toggle("dark");
-});
-
-const backToTopBtn = document.getElementById("backToTop");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
-    backToTopBtn.style.display = "block";
-  } else {
-    backToTopBtn.style.display = "none";
-  }
-});
-
-backToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+if (toggle) {
+  toggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
   });
-});
+}
+
+// Add null check for backToTopBtn
+const backToTopBtn = document.getElementById("backToTop");
+if (backToTopBtn) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+}
 
 // Image Slider Functionality
 (function() {
@@ -111,6 +115,9 @@ function loadHomeEvents() {
 // Run on homepage load
 if (document.getElementById('home-events')) {
     loadHomeEvents();
+}
+else{
+    console.log('home events not found')
 }
 
 // Weather Widget using OpenWeather API
