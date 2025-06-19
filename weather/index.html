@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css" />
+</head>
+<body>
+  <div class="weather">
+  <div class="weather-rukungiri-container">
+    <h2>Weather At Kashenyi SS Rukungiri District </h2>
+    <div id="weatherRukungiri" class="weather-card">Weather will appear here...</div>
+  </div>
+
+  <div class="container">
+    <h1>Weather Updates</h1>
+    <h2>Also search and know weather your prefered region</h2>
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button onclick="getWeather()">Get Weather</button>
+    <div id="weatherResult" class="weather-card">Weather will appear here...</div>
+  </div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>
