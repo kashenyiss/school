@@ -26,6 +26,7 @@
      border-bottom: 1px solid white;
  }
 
+
  .logo {
      font-size: 30px;
      color: white;
@@ -50,12 +51,12 @@
  .menu .list {
      display: flex;
      position: absolute;
-     right: 100px;
+     right:20px;
      padding-top: 5px;
  }
 
  .menu li {
-     margin-right: 20px;
+     margin-right: 10px;
      position: relative;
      white-space: nowrap;
      display: flex;
@@ -86,6 +87,7 @@
      text-decoration: none;
      color: white;
      text-transform: capitalize;
+     font-size: 15px;;
  }
 
  .menu li:hover:after {
@@ -127,7 +129,7 @@
 
 
  /*media queries*/
- @media(max-width:1300px) {
+ @media(max-width:1000px) {
      .logo {
          font-size: 25px;
      }
