@@ -67,16 +67,6 @@ body {
 .admissions-contact ul li {
     margin-bottom: 7px;
 }
-
-footer {
-    text-align: center;
-    padding: 18px 0 10px 0;
-    color: #43c6ac;
-    font-weight: 500;
-    background: #fffbe7;
-    border-top: 2px solid #43c6ac22;
-}
-
 /* Add a little animation for sections */
 section[data-aos] {
     transition: box-shadow 0.3s, transform 0.3s;

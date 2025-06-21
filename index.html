@@ -79,17 +79,17 @@
         </section>
 
                 <!-- Real-time Strip and Weather Button -->
-        <div class="realtime-strip" style="display:flex;align-items:center;justify-content:space-between;background:#e0f7fa;padding:10px 20px;margin:20px 0 0 0;">
-            <div style="font-weight:bold;">
+        <div class="realtime-strip">
+            <div>
                 <span>Current Time: </span><span id="realtime-clock"></span>
             </div>
-            <a href="weather/index.html" class="weather-btn" style="background:#0288d1;color:#fff;padding:8px 18px;border:none;border-radius:4px;text-decoration:none;font-weight:bold;transition:background 0.2s;">Check Weather</a>
+            <a href="weather/index.html" class="weather-btn">Check Weather</a>
         </div>
         <script src="script/realtime.js"></script>
 
                 <!-- School Highlights Section -->
     <section class="school-highlights">
-        <h2 class="highlights-title" style="text-align:center;margin-top:30px;">School Highlights</h2>
+        <h2 class="highlights-title">School Highlights</h2>
         <div class="highlights-grid">
             <div class="highlight-item">
                 <img src="images/football.jpeg" alt="Sports Excellence">
@@ -114,9 +114,9 @@
     <section class="principal-welcome">
         <h2>Welcome from the Headteacher</h2>
         <div class="welcome-message">
-            <img src="images/badge.jpg" alt="Headteacher" class="principal-photo" style="max-width:150px;float:left;margin-right:20px;">
+            <img src="images/badge.jpg" alt="Headteacher" class="principal-photo"loading="lazy">
             <p>Welcome to Kashenyi Secondary School! We are dedicated to nurturing academic excellence, character, and innovation. Our staff and I are committed to providing a safe, inclusive, and inspiring environment for every student. We invite you to explore our vibrant community and discover the opportunities that await you here.</p>
-            <p><strong>- Rev. Ivan Mwogyera, Headteacher</strong></p>
+            <p><strong>Rev. Ivan Mwongyera, Headteacher</strong></p>
         </div>
     </section>
 
@@ -242,8 +242,8 @@
     <section class="partners">
         <h2>Our Partners & Accreditations</h2>
         <div class="partners-logos">
-            <img src="images/uneb.jpg" alt="UNEB" style="max-width:80px;">
-            <img src="images/MoES.jpg" alt="MoES" style="max-width:80px;">
+            <img src="images/uneb.jpg" alt="UNEB">
+            <img src="images/MoES.jpg" alt="MoES">
             <!-- Add more partner logos as needed -->
         </div>
     </section>
@@ -274,7 +274,7 @@
         <div class="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.1051788270306!2d29.941540399999994!3d-0.7109081999999923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dec5916a5e427f%3A0x10a8ae95c1934a!2sKashenyi%20Secondary%20School!5e1!3m2!1sen!2sug!4v1748503898626!5m2!1sen!2sug"
-                width="100%" height="400" style="border:0; border-radius:18px; box-shadow:0 4px 24px rgba(0,46,125,50,0.10); margin: 18px 0;"
+                width="100%" height="400" class="map-iframe"
                 allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
@@ -288,7 +288,7 @@
             <input type="email" name="EMAIL" placeholder="Enter your email" class="email-input" required>
             <button type="submit" class="submit-btn">Subscribe</button>
           </form>
-          <div id="newsletter-success" class="newsletter-success" style="display:none;"></div>
+          <div id="newsletter-success" class="newsletter-success"></div>
         </div>
         <div class="more">
         <section class="news">
@@ -342,9 +342,6 @@
             </ul>
         </div>
 </div>
-
-
-        <button id="backToTop"><i class="fa fa-arrow-up"></i></button>
          <footer> 
             <p>&copy; Copyright Kashenyi SS 2024. Developed & Designed by AWB</p> 
         </footer>
@@ -362,11 +359,7 @@
         <script src="script/updates.js"></script>
         <script src="script/newletter.js"></script>
         <script src="script/weather.js"></script>
-        <script src="script/home-events.js"></script>
-
-        <!-- Weather Widget Script -->
-        <!-- JavaScript for the weather widget has been moved to script/weather.js -->
-        
+        <script src="script/home-events.js"></script>       
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6S0DS6Q50"></script>
     </body>

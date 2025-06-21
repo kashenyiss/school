@@ -1,0 +1,79 @@
+/* academics.css - O Level Subjects Styling */
+.o-level-subjects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 32px 0;
+}
+.o-level-subject {
+    background: #f0f4fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 18px 28px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #234;
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 140px;
+    text-align: center;
+}
+.o-level-subject:hover {
+    background: #e0eaff;
+    color: #1a237e;
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(30,60,180,0.10);
+}
+.o-level-title {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #1a237e;
+    letter-spacing: 1px;
+}
+
+/* Inline style for .chatbot-info */
+.chatbot-info {
+    margin: 30px 0;
+    padding: 18px;
+    background: #f5f7fa;
+    border-radius: 10px;
+}
+
+/* Inline style for .chatbot-info .download-btn */
+.chatbot-info .download-btn {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* News & Events Section Styling */
+.news-events {
+    background: #f5f7fa;
+    border-radius: 10px;
+    margin: 32px auto 24px auto;
+    padding: 18px 28px;
+    max-width: 700px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.news-events h2 {
+    color: #1a237e;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.news-events ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin: 0;
+}
+.news-events li {
+    margin-bottom: 8px;
+    color: #234;
+    font-size: 1.08rem;
+    line-height: 1.6;
+}
+.news-events li strong {
+    color: #1976d2;
+}

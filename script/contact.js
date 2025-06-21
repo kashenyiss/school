@@ -11,11 +11,25 @@ if (contactForm) {
         e.preventDefault();
         formStatus.textContent = 'Sending...';
         formStatus.style.color = '#0097e6';
-        // Simulate sending (replace with real backend integration if needed)
-        setTimeout(() => {
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Use EmailJS (client-side email service)
+        emailjs.send('service_oslfe5k','template_hcj643e', {
+            from_name: name,
+            from_email: email,
+            message: message,
+            to_email: 'kashenyiss@gmail.com'
+        }, 'gDVRY-RrfRUMNQEGy')
+        .then(function(response) {
             formStatus.textContent = 'Thank you for contacting us! We will get back to you soon.';
             formStatus.style.color = '#2caf50';
             contactForm.reset();
-        }, 1200);
+        }, function(error) {
+            formStatus.textContent = 'Failed to send message. Please try again later.';
+            formStatus.style.color = 'red';
+        });
     });
 }

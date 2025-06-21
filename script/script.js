@@ -6,25 +6,6 @@ if (toggle) {
   });
 }
 
-// Add null check for backToTopBtn
-const backToTopBtn = document.getElementById("backToTop");
-if (backToTopBtn) {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 0) {
-      backToTopBtn.style.display = "block";
-    } else {
-      backToTopBtn.style.display = "none";
-    }
-  });
-
-  backToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-}
-
 // Image Slider Functionality
 (function() {
     document.addEventListener('DOMContentLoaded', function() {

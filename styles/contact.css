@@ -191,6 +191,7 @@ section button:hover {
     background: #f7fbff;
     color: #222;
     transition: border 0.2s;
+    resize:none;
 }
 .form-group input:focus,
 .form-group textarea:focus {

@@ -128,11 +128,13 @@ section {
     display: flex;
     align-items: flex-start;
     gap: 24px;
+    align-items: center;
 }
 .principal-photo {
     border-radius: 50%;
     border: 3px solid #2e7d32;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: url(../images/mini/badge.jpg);
 }
 
 /* Mission, Vision, Values - Enhanced Styles */

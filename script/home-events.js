@@ -4,13 +4,13 @@ function loadHomeEvents() {
     // Example events (could be fetched from a server or static array)
     const events = [
         {
-            date: 'June 20, 2025',
-            title: 'Parents-Teachers Meeting',
+            date: 'June 19, 2025',
+            title: 'District science fair competitions',
             desc: 'All parents are invited for the termly meeting at the main hall, 10:00am.'
         },
         {
-            date: 'July 2, 2025',
-            title: 'Inter-House Sports Day',
+            date: 'June 20, 2025',
+            title: 'School prefectorial Elections',
             desc: 'A day of fun and competition among the school houses. All students to participate.'
         },
         {

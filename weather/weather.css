@@ -5,13 +5,12 @@ body {
     padding: 0;
 }
   .weather{
-    margin-top: 100px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 700px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
   .container {
     text-align: center;
@@ -19,6 +18,13 @@ body {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+  .container h1{
+    color: #0288d1;
+    border-bottom: 2px solid #0288d1;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
   }
   
   input[type="text"] {
@@ -97,3 +103,25 @@ body {
         margin-bottom: 0;
     }
   }
+  
+  /* Inline style for .home-btn in weather app */
+.home-btn {
+    background: #0288d1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.home-btn:hover {
+    background: #0277bd;
+}
+
+/* Inline style for text-align:center and margin */
+.weather-center {
+    text-align: center;
+    margin: 20px 0;
+}
